@@ -13,12 +13,12 @@
 # 12 covers 12
 # 11 covers 11
 
-def find_smallest_multiple(limit):
+def find_smallest_multiple():
 	found = False
-	start = limit
+	start = 20
 	while not found:
 
-		for i in range(1, limit + 1):
+		for i in range(11, 20):
 			if start % i == 0:
 				found = True
 			else:
@@ -27,6 +27,6 @@ def find_smallest_multiple(limit):
 		if found:
 			return start
 			break
-		start += limit
+		start += 20
 
-print find_smallest_multiple(20)
+print find_smallest_multiple()
