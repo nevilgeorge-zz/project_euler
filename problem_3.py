@@ -6,7 +6,7 @@ original = int(sys.argv[1])
 
 def checkPrime(value):
 	# check if there is a factor that is not value or 1
-	for i in range(value - 1, 2, -1):
+	for i in range(value - 1, 1, -1):
 		if value % i == 0:
 			return False
 
