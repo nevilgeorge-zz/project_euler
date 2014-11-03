@@ -11,6 +11,7 @@ def find_greatest_product(n, size):
 		
 		# splice the array to focus on only the next 13 numbers
 		temp = array[i:i + size]
+		# iterate through array and find the product
 		for j in temp:
 			product *= int(j)
 		if product > maximum:
